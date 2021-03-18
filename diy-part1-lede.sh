@@ -24,7 +24,7 @@ git clone -b legacy https://github.com/jlzsss/luci-app-v2ray.git package/luci-ap
 git clone https://github.com/frainzy1477/luci-app-trojan.git package/luci-app-trojan
 git clone -b test https://github.com/frainzy1477/luci-app-clash.git package/luci-app-clash
 git clone -b master https://github.com/vernesong/OpenClash.git package/OpenClash
-git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/luci-app-koolproxyR
+# git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/luci-app-koolproxyR
 # git clone https://github.com/fw876/helloworld.git package/helloworld
 # git clone https://github.com/jlzsss/luci-app-ssr-plus-Jo.git package/luci-app-ssr-plus-Jo
 # git clone https://github.com/jlzsss/luci-app-ssr-plus-jo-depend.git package/luci-app-ssr-plus-jo-depend
@@ -34,8 +34,8 @@ svn co https://github.com/Lienol/openwrt/trunk/package/diy package/diy
 rm -rf package/diy/luci-app-dockerman
 rm -rf package/diy/OpenAppFilter
 rm -rf package/lean/luci-theme-argon
-git clone https://github.com/kuoruan/openwrt-v2ray.git package/v2ray-core
-git clone -b master --depth 1 https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
+# git clone https://github.com/kuoruan/openwrt-v2ray.git package/v2ray-core
+# git clone -b master --depth 1 https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone https://github.com/jlzsss/php7.git package/feeds/packages/php7
