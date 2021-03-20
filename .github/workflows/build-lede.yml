@@ -61,9 +61,9 @@ jobs:
         
         df -hT
 
-    - name: WeChat notification
-      run: |
-       curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=开始编译Lede
+#    - name: WeChat notification
+#      run: |
+#       curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=开始编译Lede
 
 
     - name: Clone source code
@@ -195,10 +195,10 @@ jobs:
           LEDE_targets${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip
  #        LEDE_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.tar.gz
 
-    - name: WeChat notification
-      if: steps.Multi-thread.outputs.status == 'success' || steps.Single-thread.outputs.status == 'success' && !cancelled()
-      run: |
-       curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=Lede_${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}编译完成
+#    - name: WeChat notification
+#      if: steps.Multi-thread.outputs.status == 'success' || steps.Single-thread.outputs.status == 'success' && !cancelled()
+#      run: |
+#       curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=Lede_${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}编译完成
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
