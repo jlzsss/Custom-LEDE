@@ -37,14 +37,19 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
+  
   build:
-    timeout-minutes: 420
+  enforce-timeout-minutes:
     runs-on: ubuntu-20.04
-
+    timeout-minutes: 2
+    
     steps:
+    - name: Enforce timeout-minutes
+      uses: komiya-atsushi/action-enforce-timeout-minutes@v1.0.0
+    
     - name: Checkout
       uses: actions/checkout@main
-
+      
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
