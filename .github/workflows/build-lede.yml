@@ -38,16 +38,16 @@ env:
 
 jobs:
 
-  build:
+  enforce-timeout-minutes:
     runs-on: ubuntu-20.04
     timeout-minutes: 600
-    
+
     steps:
-    - name: Enforce timeout-minutes
-      uses: komiya-atsushi/action-enforce-timeout-minutes@v1.0.0
-    
     - name: Checkout
       uses: actions/checkout@v2
+
+    - name: Enforce timeout-minutes
+      uses: komiya-atsushi/action-enforce-timeout-minutes@v1.0.0
       
     - name: Initialization environment
       env:
