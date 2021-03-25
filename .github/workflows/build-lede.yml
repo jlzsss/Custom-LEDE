@@ -45,6 +45,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       
+    - name: Enforce timeout-minutes
+      uses: komiya-atsushi/action-enforce-timeout-minutes@v1.0.0
+      
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
@@ -111,6 +114,7 @@ jobs:
         
     - name: Multi-thread compile
       id: Multi-thread
+      timeout-minutes: 600
       run: |
         cd openwrt
         make -j10
@@ -121,6 +125,7 @@ jobs:
         
     - name: Single-thread compile
       id: Single-thread
+      timeout-minutes: 360
       if: failure() 
       run: |
        cd openwrt
