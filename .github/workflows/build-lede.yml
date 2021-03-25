@@ -39,15 +39,11 @@ env:
 jobs:
 
   build:
-    runs-on: ubuntu-20.04
-    timeout-minutes: 600
+    runs-on: [self-hosted, linux, x64]
 
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-
-    - name: Enforce timeout-minutes
-      uses: komiya-atsushi/action-enforce-timeout-minutes@v1.0.0
       
     - name: Initialization environment
       env:
