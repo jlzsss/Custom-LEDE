@@ -141,18 +141,18 @@ jobs:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
 
-#    - name: Organize files
-#      id: organize
-#      if: env.UPLOAD_FILES == 'true' && !cancelled()
-#      shell: pwsh
-#      run: |
-#        rm -rf openwrt/bin/targets/x86/64/packages
-#        echo "::set-output name=status::success"
-#        Compress-Archive -Path openwrt/bin/packages LEDE_packages${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip
-#        Compress-Archive -Path openwrt/bin/targets LEDE_targets${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip
+    - name: Organize files
+      id: organize
+      if: env.UPLOAD_FILES == 'true' && !cancelled()
+      shell: pwsh
+      run: |
+        rm -rf openwrt/bin/targets/x86/64/packages
+        echo "::set-output name=status::success"
+        Compress-Archive -Path openwrt/bin/packages LEDE_packages${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip
+        Compress-Archive -Path openwrt/bin/targets LEDE_targets${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip
             
-#        df -hT
-        
+        df -hT
+       
 #       Compress-Archive -Path openwrt/bin LEDE_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.tar.gz
       
     - name: Upload files to cowtransfer
