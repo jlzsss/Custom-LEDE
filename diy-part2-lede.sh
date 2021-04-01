@@ -24,14 +24,14 @@ git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-byp
 git clone https://github.com/garypang13/smartdns-le.git package/smartdns-le
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
-rm -rf package/feeds/garypang/bpytop
-rm -rf package/feeds/garypang/compressed-memory
-rm -rf package/feeds/garypang/luci-app-compressed-memory
-rm -rf package/feeds/garypang/luci-app-qosv4
-rm -rf package/feeds/garypang/luci-app-speederv2
-rm -rf package/feeds/garypang/luci-app-ssr-libev-server
-rm -rf package/feeds/garypang/luci-app-vssr
-rm -rf package/feeds/garypang/sub-web
+# rm -rf package/feeds/garypang/bpytop
+# rm -rf package/feeds/garypang/compressed-memory
+# rm -rf package/feeds/garypang/luci-app-compressed-memory
+# rm -rf package/feeds/garypang/luci-app-qosv4
+# rm -rf package/feeds/garypang/luci-app-speederv2
+# rm -rf package/feeds/garypang/luci-app-ssr-libev-server
+# rm -rf package/feeds/garypang/luci-app-vssr
+# rm -rf package/feeds/garypang/sub-web
 # git clone https://github.com/brvphoenix/wrtbwmon.git package/wrtbwmon
 # git clone https://github.com/brvphoenix/luci-app-wrtbwmon.git package/luci-app-wrtbwmon
 # svn co https://github.com/openwrt/packages/trunk/net/dawn package/feeds/packages/dawn
