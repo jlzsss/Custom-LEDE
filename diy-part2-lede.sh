@@ -24,7 +24,8 @@ git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-byp
 git clone https://github.com/garypang13/smartdns-le.git package/smartdns-le
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
-git clone https://github.com/project-lede/luci-app-godproxy.git package/luci-app-godproxy
+# git clone https://github.com/project-lede/luci-app-godproxy.git package/luci-app-godproxy
+git clone -b luci18 https://github.com/gproject-lede/openwrt-app.git package/lede
 rm -rf package/feeds/garypang/bpytop
 rm -rf package/feeds/garypang/luci-app-qosv4
 rm -rf package/feeds/garypang/luci-app-speederv2
