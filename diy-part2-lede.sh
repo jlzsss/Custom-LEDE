@@ -32,6 +32,7 @@ rm -rf package/feeds/garypang/luci-app-vssr
 rm -rf package/feeds/garypang/sub-web
 rm -rf package/feeds/garypang/luci-app-k3screenctrl
 rm -rf package/feeds/garypang/luci-app-passwall
+rm -rf package/feeds/garypang/luci-app-ssr-libev-server
 # git clone https://github.com/brvphoenix/wrtbwmon.git package/wrtbwmon
 # git clone https://github.com/brvphoenix/luci-app-wrtbwmon.git package/luci-app-wrtbwmon
 # svn co https://github.com/openwrt/packages/trunk/net/dawn package/feeds/packages/dawn
