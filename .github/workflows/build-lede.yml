@@ -45,10 +45,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-      
-    - name: Enforce timeout-minutes
-      uses: komiya-atsushi/action-enforce-timeout-minutes@v1.0.0
-      
+
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
@@ -117,8 +114,8 @@ jobs:
       id: Multi-thread
       run: |
         cd openwrt
-        echo -e "$(($(nproc) + 2)) thread compile"
-        make -j$(($(nproc) + 2))
+        echo -e "$(($(nproc) + 3)) thread compile"
+        make -j$(($(nproc) + 3))
         # make package/compile -j$(($(nproc) + 3))
         # make package/index -j$(($(nproc) + 3))
         echo "::set-output name=status::success"
