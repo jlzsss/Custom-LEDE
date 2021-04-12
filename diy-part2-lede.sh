@@ -24,13 +24,7 @@ git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-byp
 git clone https://github.com/garypang13/smartdns-le.git package/smartdns-le
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
-find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-passwall/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
-find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-passwall/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
-find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-ssr-plus/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
-find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-ssr-plus/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
-find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-vssr/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
-find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-vssr/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
-# git clone https://github.com/project-lede/luci-app-godproxy.git package/luci-app-godproxy
+git clone https://github.com/project-lede/luci-app-godproxy.git package/luci-app-godproxy
 git clone -b luci18 https://github.com/project-lede/openwrt-app.git package/lede
 rm -rf package/feeds/garypang/bpytop
 rm -rf package/feeds/garypang/luci-app-qosv4
@@ -43,11 +37,7 @@ rm -rf package/feeds/garypang/luci-app-ssr-libev-server
 rm -rf package/lede/compressed-memory
 rm -rf package/lede/luci-app-atinout
 rm -rf package/lede/luci-app-pcap-dnsproxy
-rm -rf package/feeds/garypang/luci-app-bypass
 rm -rf package/lede/luci-app-compressed-memory
-rm -rf package/feeds/diy1/luci-app-passwall
-rm -rf package/helloworld/luci-app-ssr-plus
-rm -rf package/feeds/kenzo/luci-app-vssr
 # git clone https://github.com/brvphoenix/wrtbwmon.git package/wrtbwmon
 # git clone https://github.com/brvphoenix/luci-app-wrtbwmon.git package/luci-app-wrtbwmon
 # svn co https://github.com/openwrt/packages/trunk/net/dawn package/feeds/packages/dawn
