@@ -34,6 +34,13 @@ rm -rf package/feeds/garypang/sub-web
 rm -rf package/feeds/garypang/luci-app-k3screenctrl
 rm -rf package/feeds/garypang/luci-app-passwall
 rm -rf package/feeds/garypang/luci-app-ssr-libev-server
+rm -rf package/lede/compressed-memory
+rm -rf package/lede/luci-app-atinout
+rm -rf package/feeds/garypang/luci-app-bypass
+rm -rf package/feeds/diy1/luci-app-passwall
+rm -rf package/lede/luci-app-pcap-dnsproxy
+rm -rf package/helloworld/luci-app-ssr-plus
+rm -rf package/feeds/kenzo/luci-app-vssr
 # git clone https://github.com/brvphoenix/wrtbwmon.git package/wrtbwmon
 # git clone https://github.com/brvphoenix/luci-app-wrtbwmon.git package/luci-app-wrtbwmon
 # svn co https://github.com/openwrt/packages/trunk/net/dawn package/feeds/packages/dawn
