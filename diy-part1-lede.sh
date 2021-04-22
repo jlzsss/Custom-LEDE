@@ -29,7 +29,7 @@ git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/luc
 git clone https://github.com/fw876/helloworld.git package/helloworld
 # git clone https://github.com/jlzsss/luci-app-ssr-plus-Jo.git package/luci-app-ssr-plus-Jo
 # git clone https://github.com/jlzsss/luci-app-ssr-plus-jo-depend.git package/luci-app-ssr-plus-jo-depend
-svn co https://github.com/openwrt/packages/trunk/libs/libcap package/feeds/packages/libcap
+# svn co https://github.com/openwrt/packages/trunk/libs/libcap package/feeds/packages/libcap
 svn co https://github.com/Lienol/openwrt/trunk/package/diy package/diy
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/dockerd package/diy/dockerd
 rm -rf package/diy/luci-app-dockerman
