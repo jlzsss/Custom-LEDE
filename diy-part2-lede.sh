@@ -30,6 +30,7 @@ git clone https://github.com/project-lede/luci-app-godproxy.git package/luci-app
 svn export --force https://github.com/project-lede/openwrt-app/branches/luci18/luci-app-autopoweroff package/luci-app-autopoweroff
 svn export --force https://github.com/project-lede/openwrt-app/branches/luci18/luci-app-autoreboot package/luci-app-autoreboot
 svn export --force https://github.com/project-lede/openwrt-app/branches/luci18/luci-app-autorepeater package/luci-app-autorepeater
+svn export --force https://github.com/project-lede/openwrt-app/branches/luci18/luci-app-chinadns-ng package//luci-app-chinadns-ng
 rm -rf package/feeds/garypang/bpytop
 rm -rf package/feeds/garypang/luci-app-qosv4
 rm -rf package/feeds/garypang/luci-app-speederv2
