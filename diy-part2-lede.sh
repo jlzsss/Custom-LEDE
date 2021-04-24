@@ -38,7 +38,7 @@ rm -rf package/feeds/garypang/luci-app-vssr
 rm -rf package/feeds/garypang/sub-web
 rm -rf package/feeds/garypang/luci-app-k3screenctrl
 rm -rf package/feeds/garypang/luci-app-passwall
-rm -rf package/feeds/garypang/luci-app-ssr-libev-server
+
 rm -rf package/lede/compressed-memory
 rm -rf package/lede/luci-app-atinout
 rm -rf package/lede/luci-app-pcap-dnsproxy
