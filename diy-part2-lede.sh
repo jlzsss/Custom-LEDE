@@ -27,6 +27,9 @@ find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-ssr-libev-server/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
 git clone https://github.com/project-lede/luci-app-godproxy.git package/luci-app-godproxy
 # git clone -b luci18 https://github.com/project-lede/openwrt-app.git package/lede
+svn export --force https://github.com/project-lede/openwrt-app/branches/luci18/luci-app-autopoweroff package/luci-app-autopoweroff
+svn export --force https://github.com/project-lede/openwrt-app/branches/luci18/luci-app-autoreboot package/luci-app-autoreboot
+svn export --force https://github.com/project-lede/openwrt-app/branches/luci18/luci-app-autorepeater package/luci-app-autorepeater
 rm -rf package/feeds/garypang/bpytop
 rm -rf package/feeds/garypang/luci-app-qosv4
 rm -rf package/feeds/garypang/luci-app-speederv2
